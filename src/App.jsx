@@ -53,7 +53,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <p className="serhii">My Test TEXT hurra!</p>
+      <p className="serhii">My Test TEXT hurra2!</p>
     </BrowserRouter>
   )
 }
