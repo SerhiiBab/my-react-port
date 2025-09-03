@@ -36,7 +36,7 @@ function App() {
         <h1>Projects</h1>
         
   
-        <p className="serhii">My Test TEXT hurra2!</p>
+        
       </div>
 
       {/* Section Skills */}
