@@ -28,12 +28,14 @@ function App() {
 {/* Section Hero */}
 <div class="hero-section">
   <div class="hero-section__left"><p>Hero</p></div>
-  <div class="hero-section__right">Text</div>
+  <div class="hero-section__right">
+    <img src={reactLogo} className="logo react" alt="frontend in work"/>
+  </div>
 
 </div>
       {/* Section Projects */}
       <div ref={projectsRef} style={{ padding: "50px 0" }}>
-        <h1>Projects</h1>
+        <h2>Projects</h2>
         
   
         
@@ -41,13 +43,13 @@ function App() {
 
       {/* Section Skills */}
       <div ref={skillsRef} style={{ padding: "50px 0" }}>
-        <h1>Skills</h1>
+        <h2>Skills</h2>
         <p>Здесь можно добавить информацию о навыках.</p>
       </div>
 
       {/* Section Contact */}
       <div ref={contactRef} style={{ padding: "50px 0" }}>
-        <h1>Contact</h1>
+        <h2>Contact</h2>
         <p>Здесь можно добавить контактную информацию.</p>
       </div>
     </>

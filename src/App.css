@@ -56,3 +56,8 @@
   display: flex;
   justify-content: center;
 }
+
+.hero-section__left {
+  background-color: #fff;
+  border-radius: 15px;
+}
