@@ -1,3 +1,62 @@
+import { useState, useRef } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  // создаем ref для каждой секции
+  const projectsRef = useRef(null);
+  const skillsRef = useRef(null);
+  const contactRef = useRef(null);
+
+  // функция для прокрутки
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <>
+      <nav class="main-nav">
+        <button onClick={() => scrollToSection(projectsRef)}>Projects</button> -|-{" "}
+        <button onClick={() => scrollToSection(skillsRef)}>Skills</button> -|-{" "}
+        <button onClick={() => scrollToSection(contactRef)}>Contact</button>
+      </nav>
+
+
+{/* Section Hero */}
+<div class="hero-section">
+  <div class="hero-section__left"><p>Hero</p></div>
+  <div class="hero-section__right">Text</div>
+
+</div>
+      {/* Section Projects */}
+      <div ref={projectsRef} style={{ padding: "50px 0" }}>
+        <h1>Projects</h1>
+        
+  
+        <p className="serhii">My Test TEXT hurra2!</p>
+      </div>
+
+      {/* Section Skills */}
+      <div ref={skillsRef} style={{ padding: "50px 0" }}>
+        <h1>Skills</h1>
+        <p>Здесь можно добавить информацию о навыках.</p>
+      </div>
+
+      {/* Section Contact */}
+      <div ref={contactRef} style={{ padding: "50px 0" }}>
+        <h1>Contact</h1>
+        <p>Здесь можно добавить контактную информацию.</p>
+      </div>
+    </>
+  );
+}
+
+export default App;
+
+{/*
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -22,8 +81,8 @@ function App() {
   return (
     <BrowserRouter>
       <nav>
-        <Link to="/">Home</Link> |{" "}
-        <Link to="/about">About</Link> |{" "}
+        <Link to="/">Projects</Link> |{" "}
+        <Link to="/about">Skills</Link> |{" "}
         <Link to="/contact">Contact</Link>
       </nav>
 
@@ -59,3 +118,4 @@ function App() {
 }
 
 export default App
+*/}
